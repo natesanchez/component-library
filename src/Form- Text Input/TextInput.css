@@ -1,0 +1,28 @@
+label {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.input-regular {
+    height: 38px;
+    width: 300px;
+    font-size: 14px;
+    color: #000000;
+    font-family: sans-serif;
+}
+
+.input-medium {
+    height: 46px;
+    width: 300px;
+    font-size: 14px;
+    color: #000000;
+    font-family: sans-serif;
+}
+
+.input-large {
+    height: 60px;
+    width: 300px;
+    font-size: 14px;
+    color: #000000;
+    font-family: sans-serif;
+}
