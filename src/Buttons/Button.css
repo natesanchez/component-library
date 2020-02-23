@@ -2,9 +2,10 @@ button {
     border-radius: 5px;
     height: 46px;
     width: 150px;
-    color: white;
+    color: #22262A;
     font-size: 14px;
     background-color: #22262A;
+    border: 2px solid #22262A;
 }
 button:hover {
     cursor: pointer;
@@ -13,6 +14,8 @@ button:hover {
 
 .button-primary {
     background-color: #33A0FF;
+    color: #33A0FF;
+    border: 2px solid #33A0FF;
 }
 .button-primary:hover {
     cursor: pointer;
@@ -21,6 +24,8 @@ button:hover {
 
 .button-danger {
     background-color: #FF4858;
+    color: #FF4858;
+    border: 2px solid #FF4858;
 }
 .button-danger:hover {
     cursor: pointer;
@@ -28,8 +33,9 @@ button:hover {
 }
 
 .button-success {
-    cursor: pointer;
     background-color: #0AD00A;
+    color: #0AD00A;
+    border: 2px solid #0AD00A;
 }
 .button-success:hover {
     cursor: pointer;
@@ -38,6 +44,8 @@ button:hover {
 
 .button-warning {
     background-color: #FFC600;
+    color: #FFC600;
+    border: 2px solid #FFC600;
 }
 .button-warning:hover {
     cursor: pointer;
@@ -47,14 +55,73 @@ button:hover {
 .button-large {
     height: 60px;
     width: 171px;
+    font-size: 16px;
+}
+
+.button-whiteText {
+    color: white ;
 }
 
 .button-white {
     background-color: white;
-    border: 2px solid #22262A;
-    color: black;
+}
+.button-white:hover {
+    cursor: pointer;
+    background-color: white;
 }
 
-.button-gradient {
 
+/*Gradients*/
+.button-primary-gradient {
+    background-color: #33A0FF1F;
+    color: #33A0FF;
+    border: none;
 }
+.button-primary-gradient:hover {
+    cursor: pointer;
+    background-color: #33A0FF1F;    
+}
+
+
+.button-danger-gradient {
+    background-color: #FF48581F;
+    color: #FF4858;
+    border: none;
+}
+.button-danger-gradient:hover {
+    cursor: pointer;
+    background-color: #FF48581F;   
+}
+
+
+.button-success-gradient {
+    background-color: #0AD00A1F;
+    color: #0AD00A;
+    border: none;
+}
+.button-success-gradient:hover {
+    cursor: pointer;
+    background-color: #0AD00A1F; 
+}
+
+
+.button-warning-gradient {
+    background-color: #FFC6001F;
+    color: #FFC600;
+    border: none;
+}
+.button-warning-gradient:hover {
+    cursor: pointer;
+    background-color: #FFC6001F;  
+}
+
+
+.button-default-gradient {
+    background-color: #22262A1F;
+    border: none;    
+}
+.button-default-gradient:hover {
+    cursor: pointer;
+    background-color: #22262A1F;    
+}
+/*End Gradients*/
