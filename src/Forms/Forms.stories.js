@@ -64,4 +64,8 @@ storiesOf('Forms', module)
     .add('Number Counter', () => <Forms
     type="number"
     number
-    />)                                     
+    />)
+    .add('test', () => <Forms
+    type="textbutton"
+    textbutton
+    />)                                          

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Forms.css"
+import Button from "../Buttons/Button"
 
 class Forms extends React.Component {
     constructor(props) {
@@ -30,11 +31,11 @@ class Forms extends React.Component {
       }
 
       if(this.props.medium) {
-        classes += ` medium`
+        classes += ` return-medium`
       }
 
       if(this.props.large) {
-        classes += ` large`
+        classes += ` return-large`
       }
 
       if(this.props.fill) {
@@ -57,7 +58,7 @@ class Forms extends React.Component {
       )
     }
 
-    if (this.props.select) {
+    if (this.props.select) { 
       return (
       <div>
         <select className={classes}>
@@ -80,8 +81,21 @@ class Forms extends React.Component {
       )
   }  
 
-
+  if(this.props.textbutton) {
+    return (
+        <form className={classes}>
+        <input className="textButtonInputDiv" type="text" placeholder={placeholder}/>
+        <Button     
+        label="Do Something"
+        type="primary"
+        form
+        whiteText/>
+        </form>
+    )
+}  
     
+
+
   }
 }
 

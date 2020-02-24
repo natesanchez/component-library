@@ -70,6 +70,11 @@ button:hover {
     background-color: white;
 }
 
+.button-form {
+    height: 46px;
+    border-radius: 0 5px 5px 0;
+}
+
 
 /*Gradients*/
 .button-primary-gradient {

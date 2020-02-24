@@ -28,7 +28,17 @@ const Button = (props) => {
         classList += ` button-default-gradient`
     } 
 
-    return <button className={classList}>{props.label}</button>
+    if (props.form) {
+        classList += ` button-form`
+    } 
+
+    return <button onClick={props.onClick} className={classList}>{props.label}</button>
 }
+
+Button.defaultProps = {
+    onClick: (e) => {e.preventDefault(); console.log('hi')},
+    label: "default"
+}
+
 
 export default Button; 
