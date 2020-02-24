@@ -79,7 +79,7 @@ storiesOf('Forms', module)
     />)
     .add('Checkbox Black', () => <Forms
     type="checkbox"
-    label="Don't Show this popup again"    
+    label=""    
     checkbox1
     />)
     .add('Checkbox Blue', () => <Forms
