@@ -24,3 +24,40 @@ storiesOf('Forms', module)
     large
     text
     />)
+    .add('Select Input Large', () => <Forms
+    type="select"
+    label="Select"
+    large
+    select
+    />)
+    .add('Select Input Medium', () => <Forms
+    type="select"
+    label="Select"
+    medium
+    select
+    />)
+    .add('Select Input Regular', () => <Forms
+    type="select"
+    label="Select"
+    select
+    />)
+    .add('Select Input Large FILL', () => <Forms
+    type="select"
+    label="Select"
+    large
+    select
+    fill
+    />)
+    .add('Select Input Medium FILL', () => <Forms
+    type="select"
+    label="Select"
+    medium
+    select
+    fill
+    />)
+    .add('Select Input Regular FILL', () => <Forms
+    type="select"
+    label="Select"
+    select
+    fill
+    />)                              

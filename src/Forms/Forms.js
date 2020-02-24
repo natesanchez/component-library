@@ -9,7 +9,6 @@ class Forms extends React.Component {
         };
     }
     render() {  
-      console.log(this.state.inputValue)
       let classes = '';
       let types = ['text', 'select', 'number', 'textbutton', 'checkbox']
       if (types.includes(this.props.type)) {
@@ -22,11 +21,15 @@ class Forms extends React.Component {
       }
 
       if(this.props.medium) {
-        classes += ` text-medium`
+        classes += ` medium`
       }
 
       if(this.props.large) {
-        classes += ` text-large`
+        classes += ` large`
+      }
+
+      if(this.props.fill) {
+        classes += ` selectFill`
       }
 
     if (this.props.text) {
@@ -39,6 +42,22 @@ class Forms extends React.Component {
       </div>
       )
     }
+
+    if (this.props.select) {
+      return (
+      <div>
+        <select className={classes}>
+            <option defaultValue>{this.props.label}</option>
+            <option>option</option>
+            <option>option</option>
+            <option>option</option>
+        </select>
+      </div>
+      )
+  }
+
+
+    
   }
 }
 

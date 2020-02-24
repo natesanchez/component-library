@@ -13,12 +13,27 @@
     border-radius: 2px;
 }
 
-.text-medium {
+.form-select {
+    width: 200px;
+    height: 38px;
+    border: 2px solid #0000001F;
+    border-radius: 2px;
+    background-color: white;
+    color: black;
+}
+
+.selectFill {
+    background-color: #FAFAFB;
+    border: 1px solid #0000001F;
+
+}
+
+.medium {
     height: 46px;
     width: 300px;
 }
 
-.text-large {
+.large {
     height: 60px;
     width: 300px;    
 }
