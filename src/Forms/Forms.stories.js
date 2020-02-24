@@ -60,4 +60,8 @@ storiesOf('Forms', module)
     label="Select"
     select
     fill
-    />)                              
+    />)
+    .add('Number Counter', () => <Forms
+    type="number"
+    number
+    />)                                     

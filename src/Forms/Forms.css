@@ -22,6 +22,30 @@
     color: black;
 }
 
+
+.form-number {
+    width: 116px;
+    height: 46px;
+    background: #F6F7F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.numberClick {
+    display: inline-block;
+    height: 46px;
+    width: 58px;
+    background: #F6F7F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #33A0FF;
+}
+.numberClick:hover {
+    cursor: pointer;
+}
+
+
 .selectFill {
     background-color: #FAFAFB;
     border: 1px solid #0000001F;

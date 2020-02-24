@@ -5,7 +5,8 @@ class Forms extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        inputValue: ""
+        inputValue: "",
+        counter: 0
         };
     }
     render() {  
@@ -16,7 +17,7 @@ class Forms extends React.Component {
       }
 
       let placeholder = this.props.placeholder
-      if (!placeholder) {
+      if (placeholder === "") {
           placeholder = this.props.label
       }
 
@@ -55,6 +56,14 @@ class Forms extends React.Component {
       </div>
       )
   }
+
+    if(this.props.number) {
+      return (
+          <div className={classes}>
+            <div className="numberClick">-</div><span>{this.state.counter}</span><div className="numberClick">+</div>
+          </div>
+      )
+  }  
 
 
     
