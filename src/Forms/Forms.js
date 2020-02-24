@@ -7,10 +7,17 @@ class Forms extends React.Component {
       super(props);
       this.state = {
         inputValue: "",
-        counter: 0
+        counter: 0,
+        voucher: ""
         };
     }
 
+    voucher = () => {
+      this.setState({
+        voucher: this.input.value
+      })      
+    }
+    
     counterUp = () => {
       this.setState({
         counter: this.state.counter + 1
@@ -81,15 +88,12 @@ class Forms extends React.Component {
       )
   }  
 
+
   if(this.props.textbutton) {
     return (
         <form className={classes}>
-        <input className="textButtonInputDiv" type="text" placeholder={placeholder}/>
-        <Button     
-        label="Do Something"
-        type="primary"
-        form
-        whiteText/>
+        <input onSubmit={() => {this.setState({voucher: this.input.value})}} className={"textButtonInputDiv"} type="text" placeholder={placeholder}/>
+        <Button label="Redeem" type="primary" form whiteText/>
         </form>
     )
 }  

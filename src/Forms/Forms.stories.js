@@ -65,7 +65,9 @@ storiesOf('Forms', module)
     type="number"
     number
     />)
-    .add('test', () => <Forms
+    .add('Redeem', () => <Forms
     type="textbutton"
+    label="Voucher Code"
+    placeholder=""
     textbutton
     />)                                          
