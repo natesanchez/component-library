@@ -65,9 +65,25 @@ storiesOf('Forms', module)
     type="number"
     number
     />)
-    .add('Redeem', () => <Forms
+    .add('Voucher', () => <Forms
     type="textbutton"
     label="Voucher Code"
     placeholder=""
     textbutton
-    />)                                          
+    />)
+    .add('Voucher Big', () => <Forms
+    type="textbutton"
+    label="Voucher Code"
+    placeholder=""
+    textbuttonBig
+    />)
+    .add('Checkbox Black', () => <Forms
+    type="checkbox"
+    label="Don't Show this popup again"    
+    checkbox1
+    />)
+    .add('Checkbox Blue', () => <Forms
+    type="checkbox"
+    label="Don't Show this popup again"
+    checkbox2
+    />)                                                              

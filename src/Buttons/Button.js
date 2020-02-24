@@ -32,6 +32,10 @@ const Button = (props) => {
         classList += ` button-form`
     } 
 
+    if (props.form2) {
+        classList += ` button-form-2`
+    } 
+
     return <button onClick={props.onClick} className={classList}>{props.label}</button>
 }
 

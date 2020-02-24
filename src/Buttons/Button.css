@@ -75,6 +75,12 @@ button:hover {
     border-radius: 0 5px 5px 0;
 }
 
+.button-form-2 {
+    width: 118px;
+    height: 60px;
+    border-radius: 0 5px 5px 0;
+}
+
 
 /*Gradients*/
 .button-primary-gradient {

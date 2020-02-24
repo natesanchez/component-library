@@ -8,7 +8,8 @@ class Forms extends React.Component {
       this.state = {
         inputValue: "",
         counter: 0,
-        voucher: ""
+        voucher: "",
+        clicked: false
         };
     }
 
@@ -17,7 +18,7 @@ class Forms extends React.Component {
         voucher: this.input.value
       })      
     }
-    
+
     counterUp = () => {
       this.setState({
         counter: this.state.counter + 1
@@ -88,16 +89,45 @@ class Forms extends React.Component {
       )
   }  
 
-
-  if(this.props.textbutton) {
-    return (
-        <form className={classes}>
-        <input onSubmit={() => {this.setState({voucher: this.input.value})}} className={"textButtonInputDiv"} type="text" placeholder={placeholder}/>
-        <Button label="Redeem" type="primary" form whiteText/>
-        </form>
-    )
-}  
+    if(this.props.textbutton) {
+      console.log(this.state.voucher)
+      return (
+          <form className={classes}>
+          <input onSubmit={() => {this.setState({voucher: this.input.value})}} className={"textButtonInputDiv"} 
+          type="text" placeholder={placeholder}/>
+          <Button label="Redeem" type="primary" form whiteText/>
+          </form>
+      )
+  }  
     
+    if(this.props.textbuttonBig) {
+      return (
+          <form className="form-textbutton-2">
+          <input className="textButtonInputDiv2" type="text" placeholder={placeholder}/>
+          <Button label="Redeem" type="primary" form2 whiteText/>
+          </form>
+      )
+    } 
+
+
+    if(this.props.checkbox1) {
+      return (
+        <label className="container-black">
+          <input className="inputInput-black" type="checkbox"/>
+          <span onClick={()=> {this.setState({clicked: false ? true : false})}} className="checkmark-black"></span>{this.props.label}
+        </label>
+      )
+    } 
+
+
+    if(this.props.checkbox2) {
+      return (
+        <label className="container-blue">
+          <input className="inputInput-blue" type="checkbox"/>
+          <span className="checkmark-blue"></span>{this.props.label}
+        </label>
+      )
+    } 
 
 
   }

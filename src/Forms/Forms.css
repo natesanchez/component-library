@@ -72,6 +72,14 @@
     
 }
 
+.form-textbutton-2 {
+    width: 369px;
+    height: 60px;
+    background: yellow;
+    display: flex;
+    
+}
+
 .textButtonInputDiv {
     width: 182px;
     height: 42px;
@@ -79,5 +87,131 @@
 
 }
 
+.textButtonInputDiv2 {
+    width: 251px;
+    height: 54px;
+}
 
+.container-black {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 
+  .container-black .inputInput-black {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark-black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+  }
+
+  .container-black:hover .inputInput-black ~ .checkmark-black {
+    background-color: white;
+  }
+
+  .container-black .inputInput-black:checked ~ .checkmark-black {
+    background-color: black;
+  }
+
+  .checkmark-black:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container-black .inputInput-black:checked ~ .checkmark-black:after {
+    display: block;
+  }
+
+  .container-black .checkmark-black:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .container-blue {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .container-blue .inputInput-blue {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark-blue{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 2px solid #33A0FF;
+    border-radius: 4px;
+  }
+
+  .container-blue:hover .inputInput-blue ~ .checkmark-blue {
+    background-color: white;
+  }
+
+  .container-blue .inputInput-blue:checked ~ .checkmark-blue{
+    background-color: #33A0FF;
+  }
+
+  .checkmark-blue:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container-blue .inputInput-blue:checked ~ .checkmark-blue:after {
+    display: block;
+  }
+
+  .container-blue .checkmark-blue:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
