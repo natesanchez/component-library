@@ -67,7 +67,6 @@
 .form-textbutton {
     width: 300px;
     height: 46px;
-    background: yellow;
     display: flex;
     
 }
@@ -75,7 +74,6 @@
 .form-textbutton-2 {
     width: 369px;
     height: 60px;
-    background: yellow;
     display: flex;
     
 }
