@@ -30,6 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
 }
 .numberClick {
     display: inline-block;
@@ -40,6 +41,7 @@
     align-items: center;
     justify-content: center;
     color: #33A0FF;
+    border-radius: 5px;
 }
 .numberClick:hover {
     cursor: pointer;
