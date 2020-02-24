@@ -1,5 +1,7 @@
 import React from 'react';
 import "./Button.css"
+import Cart from "../images/cart.svg"
+import Heart from "../images/heart.svg"
 
 
 const Button = (props) => {
@@ -10,6 +12,10 @@ const Button = (props) => {
     }
     if (props.large) {
         classList += ` button-large`
+    }
+
+    if (props.tiny) {
+        classList += ` button-tiny`
     }
 
     if (props.whiteText) {
@@ -35,6 +41,15 @@ const Button = (props) => {
     if (props.form2) {
         classList += ` button-form-2`
     } 
+
+
+    if (props.addToCart) {
+        return <button onClick={props.onClick} className={classList}><img src={Cart} alt="" ></img><p>{props.label}</p></button>
+    }
+
+    if (props.addToFavs) {
+        return <button onClick={props.onClick} className={classList}><img src={Heart} alt="" ></img><p>{props.label}</p></button>
+    }
 
     return <button onClick={props.onClick} className={classList}>{props.label}</button>
 }

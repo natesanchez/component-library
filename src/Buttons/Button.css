@@ -6,6 +6,9 @@ button {
     font-size: 14px;
     background-color: #22262A;
     border: 2px solid #22262A;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 button:hover {
     cursor: pointer;
@@ -81,6 +84,10 @@ button:hover {
     border-radius: 0 5px 5px 0;
 }
 
+.button-tiny {
+    height: 46px;
+    width: 46px;
+}
 
 /*Gradients*/
 .button-primary-gradient {

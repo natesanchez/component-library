@@ -163,4 +163,30 @@ storiesOf('Button', module)
     label="Do Something"
     white
     large
-    />)               
+    />)
+    .add('Add to Cart', () => <Button 
+    label="Add to Cart"
+    type="primary" 
+    gradient
+    addToCart
+    />)
+    .add('Add to Favories', () => <Button 
+    label="Add to Favorites"
+    type="primary" 
+    gradient
+    addToFavs
+    />)
+    .add('Cart Button', () => <Button 
+    label=""
+    type="primary" 
+    gradient
+    addToCart
+    tiny
+    />)
+    .add('Heart Button', () => <Button 
+    label=""
+    type="primary" 
+    gradient
+    addToFavs
+    tiny
+    />)                  
